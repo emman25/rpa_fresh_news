@@ -334,7 +334,6 @@ class NewsSource:
                 self.browser.click_button_when_visible('css:#site-content > div > div:nth-child(2) > div.css-1t62hi8 > div > button')
                 time.sleep(1)
 
-        
             except:
                 break
             
@@ -415,9 +414,6 @@ class NewsSource:
                 logger.info(f"Directory {directory} created.")
             else:
                 logger.info(f"Directory {directory} already exists.")
-
-
-
 
     def run_workflow(self):
         """Execute the workflow to collect news data and save it.
