@@ -1,0 +1,115 @@
+2024-01-16 20:30:42,817 - tasks - INFO - <robocorp.workitems.Inputs object at 0x000001CD25C8BDC0>
+2024-01-16 20:35:15,390 - tasks - INFO - Loaded payload from configuration.json: {'search_phrase': 'computer science', 'news_category': 'Arts', 'num_months': 0}
+2024-01-16 20:37:45,987 - tasks - INFO - Loaded payload from configuration.json: {'search_phrase': 'computer science', 'news_category': 'Arts', 'num_months': 0}
+2024-01-16 20:38:33,383 - tasks - INFO - Selected News Category: Arts
+2024-01-16 20:38:33,605 - tasks - INFO - Selected type: any
+2024-01-16 20:38:34,403 - tasks - INFO - Successfully applied date range
+2024-01-16 20:38:39,822 - tasks - INFO - [<selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_198")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_160")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_199")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_200")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_201")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_202")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_203")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_204")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_205")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_206")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_207")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_176")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_181")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_208")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_209")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_210")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_211")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_212")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_213")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_214")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_215")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_193")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_190")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_216")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_217")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_218")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_219")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_220")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_221")>, <selenium.webdriver.remote.webelement.WebElement (session="8dea002981fa1748c9a8d2071e12d8b1", element="66B3346D679716AF30CA885CCE1CA4CF_element_222")>]
+2024-01-16 20:38:39,822 - tasks - INFO - 30
+2024-01-16 20:38:40,036 - tasks - INFO - Fetched news items successfully
+2024-01-16 20:38:40,041 - tasks - INFO - Directory output/pics created.
+2024-01-16 20:38:40,043 - tasks - INFO - Directory output/files created.
+2024-01-16 20:38:40,087 - tasks - INFO - Opened workbook
+2024-01-16 20:38:40,103 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:38:41,671 - tasks - INFO - Downloaded image: output/pics/Vera_Molnar__Pioneer_of_Computer_Art__Dies_at_99Dec__14__2023.png
+2024-01-16 20:38:41,673 - tasks - INFO - Completed the automation
+2024-01-16 20:40:35,257 - tasks - INFO - Loaded payload from configuration.json: {'search_phrase': 'computer science', 'news_category': 'Arts', 'num_months': 0}
+2024-01-16 20:41:03,348 - tasks - INFO - Selected News Category: Arts
+2024-01-16 20:41:03,586 - tasks - INFO - Selected type: any
+2024-01-16 20:41:04,346 - tasks - INFO - Successfully applied date range
+2024-01-16 20:41:09,672 - tasks - INFO - [<selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_172")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_135")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_173")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_174")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_175")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_176")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_177")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_178")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_179")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_180")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_181")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_155")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_159")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_182")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_183")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_184")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_185")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_186")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_187")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_188")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_189")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_166")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_170")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_190")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_191")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_192")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_193")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_194")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_195")>, <selenium.webdriver.remote.webelement.WebElement (session="85a050b17cfb02eae285a3508d8e3ea5", element="0378D931825DF3F3F225D32F65A96913_element_196")>]
+2024-01-16 20:41:09,672 - tasks - INFO - 30
+2024-01-16 20:41:14,888 - tasks - INFO - Fetched news items successfully
+2024-01-16 20:41:14,894 - tasks - INFO - Directory output/pics created.
+2024-01-16 20:41:14,895 - tasks - INFO - Directory output/files created.
+2024-01-16 20:41:14,926 - tasks - INFO - Opened workbook
+2024-01-16 20:41:14,943 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:16,442 - tasks - INFO - Downloaded image: output/pics/Vera_Molnar__Pioneer_of_Computer_Art__Dies_at_99Dec__14__2023.png
+2024-01-16 20:41:16,466 - tasks - INFO - Opened workbook
+2024-01-16 20:41:16,481 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:18,053 - tasks - INFO - Downloaded image: output/pics/The_Novel_Source_for_This_Space_Mystery__A_Novel_Nov__5__2023.png
+2024-01-16 20:41:18,079 - tasks - INFO - Opened workbook
+2024-01-16 20:41:18,094 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:19,467 - tasks - INFO - Downloaded image: output/pics/Indiana_University_Cancels_Major_Exhibition_of_Palestinian_ArtistJan__10.png
+2024-01-16 20:41:19,492 - tasks - INFO - Opened workbook
+2024-01-16 20:41:19,511 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:21,385 - tasks - INFO - Downloaded image: output/pics/Making_Connections_With_the_UnseenOct__17__2023.png
+2024-01-16 20:41:21,412 - tasks - INFO - Opened workbook
+2024-01-16 20:41:21,432 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:23,020 - tasks - INFO - Downloaded image: output/pics/With_Bamboo_and_Jade__Silkpunk_Rebuilds_HistoryOct__21__2023.png
+2024-01-16 20:41:23,046 - tasks - INFO - Opened workbook
+2024-01-16 20:41:23,069 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:24,451 - tasks - INFO - Downloaded image: output/pics/Gilder_Center_Flies__Wriggles_and_SurprisesAug__9__2023.png
+2024-01-16 20:41:24,480 - tasks - INFO - Opened workbook
+2024-01-16 20:41:24,503 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:26,187 - tasks - INFO - Downloaded image: output/pics/In_Cocoon__a_Journey_Between_Mysterious_Worlds_AwaitsSept__27__2023.png
+2024-01-16 20:41:26,219 - tasks - INFO - Opened workbook
+2024-01-16 20:41:26,234 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:27,904 - tasks - INFO - Downloaded image: output/pics/Hank_Green__Novelist_and_YouTube_Star__Announces_He_Has_CancerMay_19__2023.png
+2024-01-16 20:41:27,930 - tasks - INFO - Opened workbook
+2024-01-16 20:41:27,944 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:29,456 - tasks - INFO - Downloaded image: output/pics/Scrolls_That_Survived_Vesuvius_Divulge_Their_First_WordOct__11__2023.png
+2024-01-16 20:41:29,509 - tasks - INFO - Opened workbook
+2024-01-16 20:41:29,547 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:31,398 - tasks - INFO - Downloaded image: output/pics/Final_Fantasy_XVI_Takes_on_Its__Star_Wars__ProblemJune_19__2023.png
+2024-01-16 20:41:31,424 - tasks - INFO - Opened workbook
+2024-01-16 20:41:31,447 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:32,866 - tasks - INFO - Downloaded image: output/pics/What_s_in_Our_Queue___Heat__and_MoreMay_24__2023.png
+2024-01-16 20:41:32,903 - tasks - INFO - Opened workbook
+2024-01-16 20:41:32,923 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:34,372 - tasks - INFO - Downloaded image: output/pics/Digital_Replicas__a_Fear_of_Striking_Actors__Already_Fill_ScreensAug__3__2023.png
+2024-01-16 20:41:34,399 - tasks - INFO - Opened workbook
+2024-01-16 20:41:34,414 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:36,016 - tasks - INFO - Downloaded image: output/pics/Wonder_and_Awe_in_Natural_History_s_New_Wing__Butterflies__Too_April_24__2023.png
+2024-01-16 20:41:36,042 - tasks - INFO - Opened workbook
+2024-01-16 20:41:36,061 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:37,518 - tasks - INFO - Downloaded image: output/pics/Executive_Director_of_Museum_of_the_Moving_Image_Exits_After_12_YearsJan__24__2023.png
+2024-01-16 20:41:37,556 - tasks - INFO - Opened workbook
+2024-01-16 20:41:37,580 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:39,526 - tasks - INFO - Downloaded image: output/pics/TV_s_War_With_the_Robots_Is_Already_HereMay_9__2023.png
+2024-01-16 20:41:39,552 - tasks - INFO - Opened workbook
+2024-01-16 20:41:39,567 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:40,959 - tasks - INFO - Downloaded image: output/pics/Inspired_by_Jane_Goodall__Onscreen_and_in_Real_LifeApril_12__2023.png
+2024-01-16 20:41:40,985 - tasks - INFO - Opened workbook
+2024-01-16 20:41:41,003 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:42,808 - tasks - INFO - Downloaded image: output/pics/A_Cyberattack_Shuts_the_Met_Opera_s_Box_Office__but_the_Show_Goes_OnDec__13__2022.png
+2024-01-16 20:41:42,840 - tasks - INFO - Opened workbook
+2024-01-16 20:41:42,860 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:44,396 - tasks - INFO - Downloaded image: output/pics/Science_Is_on_His_Dance_CardSept__1__2022.png
+2024-01-16 20:41:44,425 - tasks - INFO - Opened workbook
+2024-01-16 20:41:44,442 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:46,028 - tasks - INFO - Downloaded image: output/pics/Paul_Reubens_Was_More_Than_Pee_wee__Here_are_8_Great_Performances_July_31__2023.png
+2024-01-16 20:41:46,057 - tasks - INFO - Opened workbook
+2024-01-16 20:41:46,077 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:48,005 - tasks - INFO - Downloaded image: output/pics/_The_Unheard_Symphony_of_the_Planet_Jan__2__2023.png
+2024-01-16 20:41:48,034 - tasks - INFO - Opened workbook
+2024-01-16 20:41:48,053 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:49,657 - tasks - INFO - Downloaded image: output/pics/Yuck_to_Wow__Explaining_Science_and_Technology_in_MuseumsOct__27__2015.png
+2024-01-16 20:41:49,689 - tasks - INFO - Opened workbook
+2024-01-16 20:41:49,707 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:51,137 - tasks - INFO - Downloaded image: output/pics/Call_It_Dance__Puppetry_or_Sculpture__It_Is_Eerily_BeautifulJuly_12__2023.png
+2024-01-16 20:41:51,190 - tasks - INFO - Opened workbook
+2024-01-16 20:41:51,220 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:54,812 - tasks - INFO - Downloaded image: output/pics/8_Podcasts_for_the_Tech_CuriousJuly_17__2019.png
+2024-01-16 20:41:54,849 - tasks - INFO - Opened workbook
+2024-01-16 20:41:54,867 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:56,401 - tasks - INFO - Downloaded image: output/pics/_Schoolhouse_Rock___at_50__Those_Are_Magic_NumbersJan__30__2023.png
+2024-01-16 20:41:56,431 - tasks - INFO - Opened workbook
+2024-01-16 20:41:56,449 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:57,997 - tasks - INFO - Downloaded image: output/pics/A_Pandemic_Bonus__Catch_These_TV_Shows_While_They_re_Still_FreeApril_20__2020.png
+2024-01-16 20:41:58,034 - tasks - INFO - Opened workbook
+2024-01-16 20:41:58,054 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:41:59,512 - tasks - INFO - Downloaded image: output/pics/Matt_Amodio__the_Latest__Jeopardy___Star__Breaks__1_MillionSept__23__2021.png
+2024-01-16 20:41:59,543 - tasks - INFO - Opened workbook
+2024-01-16 20:41:59,565 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:42:01,158 - tasks - INFO - Downloaded image: output/pics/Edward_Klaris__Art_as_VRMay_1__2018.png
+2024-01-16 20:42:01,188 - tasks - INFO - Opened workbook
+2024-01-16 20:42:01,208 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:42:02,324 - tasks - INFO - Downloaded image: output/pics/A__Holopoem__for_the_CosmosDec__29__2023.png
+2024-01-16 20:42:02,355 - tasks - INFO - Opened workbook
+2024-01-16 20:42:02,374 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:42:03,887 - tasks - INFO - Downloaded image: output/pics/Art_by_the_NumbersOct__22__2019.png
+2024-01-16 20:42:03,918 - tasks - INFO - Opened workbook
+2024-01-16 20:42:03,937 - tasks - INFO - Wrote to excel: output/files/data.xlsx
+2024-01-16 20:42:05,389 - tasks - INFO - Downloaded image: output/pics/Space_Pagans_and_Smartphone_Witches__Where_Tech_Meets_MysticismNov__23__2021.png
+2024-01-16 20:42:05,391 - tasks - INFO - Completed the automation

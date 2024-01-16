@@ -1,0 +1,20 @@
+name: Upload to Robocorp Control Room
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  upload-robot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Upload to Robocorp Control Room
+        uses: robocorp/action-upload@v1
+        with:
+          rc_api_key: ${{ secrets.ROBOCORP_API_KEY }}
+          workspace_id: ${{ secrets.ROBOCORP_WORKSPACE_ID }}
+          robot_id: ${{ secrets.ROBOCORP_ROBOT_ID }}
