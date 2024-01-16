@@ -327,16 +327,14 @@ class NewsSource:
         Returns:
             None
         """
-        count = 0
+        
         while True:
             try:
                 self.browser.execute_javascript("window.scrollTo(0, document.body.scrollHeight);")
                 self.browser.click_button_when_visible('css:#site-content > div > div:nth-child(2) > div.css-1t62hi8 > div > button')
                 time.sleep(1)
 
-                count += 1
-                if(count == 2):
-                    break
+        
             except:
                 break
             
@@ -366,6 +364,7 @@ class NewsSource:
                 logger.info("Opened workbook")
         
             excel.append_rows_to_worksheet([[data["title"], data["date"], data["description"], data["filename"], data['count'], data['is_paid']]], name="Data")
+
 
             excel.save_workbook()
             excel.close_workbook()
