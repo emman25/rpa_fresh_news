@@ -10,7 +10,7 @@ jobs:
       - name: Checkout files from repository
         uses: actions/checkout@v2
       - name: Upload robot to Control Room
-        uses: robocorp/action-upload-robot@v1
+        uses: robocorp/action-upload-robot@v1.2.0
         with:
           workspace-key: ${{ secrets.ROBOCORP_WORKSPACE_KEY }}
           workspace-id: ${{ secrets.ROBOCORP_WORKSPACE_ID }}
