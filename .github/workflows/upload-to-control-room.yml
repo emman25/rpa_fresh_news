@@ -3,17 +3,14 @@ name: Upload to Robocorp Control Room
 on: [push]
 
 jobs:
-  test-action:
+  upload-robot:
     runs-on: ubuntu-latest
-    name: Upload to Robocorp Control Room
+    name: Upload robot
     steps:
-      - uses: actions/checkout@master
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
-      - name: Upload Robot to Control Room
-        uses: ./
+      - name: Checkout files from repository
+        uses: actions/checkout@v2
+      - name: Upload robot to Control Room
+        uses: robocorp/action-upload-robot@v1
         with:
           workspace-key: ${{ secrets.ROBOCORP_API_KEY }}
           workspace-id: ${{ secrets.ROBOCORP_WORKSPACE_ID }}
