@@ -480,5 +480,7 @@ def run_news_data_task() -> None:
     .with_num_months(payload['num_months'])\
     .build()
 
+    logger.info("Complete")
+
     newsSource.run_workflow()
 
