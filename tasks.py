@@ -460,23 +460,10 @@ def run_news_data_task() -> None:
         "news_category": "Arts",
         "num_months": 0
     }
-        
-    try:
-        raise_exception = True
-        for item in workitems.inputs:
-            payload = item.payload
-            if(payload is not None):
-                raise_exception = False
-        
-        if raise_exception:
-            raise Exception("Load config")
-        
-        logger.info(f"Loaded payload from work item: {payload}")
 
-    except Exception as e:
-        with open('configuration.json', 'r') as config_file:
-            payload = json.load(config_file)
-            logger.info(f"Loaded payload from configuration.json: {payload}")
+    for item in workitems.inputs:
+        payload = item.payload
+      
 
     newsSource = NewsSource.builder()\
     .with_search_phrase(payload['search_phrase'])\
