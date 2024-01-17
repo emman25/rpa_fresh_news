@@ -13,7 +13,7 @@ jobs:
       - name: Trigger Control Room process run
         uses: robocorp/action-trigger-process@v1
         with:
-          api-key: ${{ secrets.ROBOCORP_API_KEY }}
+          api-key: ${{ secrets.ROBOCORP_WORKSPACE_KEY }}
           workspace-id: ${{ secrets.ROBOCORP_WORKSPACE_ID }}
           process-id: ${{ secrets.ROBOCORP_PROCESS_ID }}
           payload: '{"search_phrase": "computer science", "news_category": "Arts", "num_months": 0}'
