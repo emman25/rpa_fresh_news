@@ -1,37 +1,20 @@
 name: Upload to Robocorp Control Room
 
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 jobs:
-  upload-to-control-room:
-    runs-on: ubuntu-latest 
-    name: Upload to Control Room
-
+  test-action:
+    runs-on: ubuntu-latest
+    name: Upload to Robocorp Control Room
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v2
-
-      - name: Set up Python
-        uses: actions/setup-python@v2 
+      - uses: actions/checkout@master
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
         with:
-          python-version: '3.8'
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          
-      - name: Login to Robocorp Cloud
-        env:
-          ROBOCORP_API_KEY: ${{ secrets.ROBOCORP_API_KEY }}
-        run: |
-          rcc configure credentials ${ROBOCORP_API_KEY}
-
+          node-version: 16.x
       - name: Upload Robot to Control Room
-        env:
-          ROBOCORP_WORKSPACE_ID: ${{ secrets.ROBOCORP_WORKSPACE_ID }}
-          ROBOCORP_ROBOT_ID: ${{ secrets.ROBOCORP_ROBOT_ID }}
-        run: |
-          rcc cloud push -w ${ROBOCORP_WORKSPACE_ID} -r ${ROBOCORP_ROBOT_ID}
+        uses: ./
+        with:
+          workspace-key: ${{ secrets.ROBOCORP_API_KEY }}
+          workspace-id: ${{ secrets.ROBOCORP_WORKSPACE_ID }}
+          robot-id: ${{ secrets.ROBOCORP_ROBOT_ID }}
