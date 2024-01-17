@@ -9,12 +9,14 @@ jobs:
   upload-robot:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Upload to Robocorp Control Room
-        uses: robocorp/action-upload@v1
+      - uses: actions/checkout@master
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
         with:
-          rc_api_key: ${{ secrets.ROBOCORP_API_KEY }}
-          workspace_id: ${{ secrets.ROBOCORP_WORKSPACE_ID }}
-          robot_id: ${{ secrets.ROBOCORP_ROBOT_ID }}
+          node-version: 12.x
+      - name: Upload Robot to Control Room
+        uses: robocorp/action-upload-robot@v1
+        with:
+          workspace-key: ${{ secrets.ROBOCORP_API_KEY }}
+          workspace-id: ${{ secrets.ROBOCORP_WORKSPACE_ID }}
+          robot-id: ${{ secrets.ROBOCORP_ROBOT_ID }}
