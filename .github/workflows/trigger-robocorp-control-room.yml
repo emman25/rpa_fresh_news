@@ -3,7 +3,7 @@ name: Trigger a process in Control Room
 on:
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   run-process:

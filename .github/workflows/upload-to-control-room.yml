@@ -6,8 +6,9 @@ on:
       - master
 
 jobs:
-  upload-robot:
+  upload-to-control-room:
     runs-on: ubuntu-latest
+    name: Upload to Control Room
     steps:
       - uses: actions/checkout@master
       - name: Use Node.js 12.x
