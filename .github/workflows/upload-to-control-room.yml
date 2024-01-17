@@ -8,7 +8,7 @@ jobs:
     name: Upload robot
     steps:
       - name: Checkout files from repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4.1.0
       - name: Upload robot to Control Room
         uses: robocorp/action-upload-robot@v1.2.0
         with:
