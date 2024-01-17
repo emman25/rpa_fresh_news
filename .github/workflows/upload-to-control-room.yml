@@ -22,8 +22,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install robocorp-cli  # Install Robocorp CLI
-
+          
       - name: Login to Robocorp Cloud
         env:
           ROBOCORP_API_KEY: ${{ secrets.ROBOCORP_API_KEY }}
