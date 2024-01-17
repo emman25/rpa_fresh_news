@@ -465,7 +465,7 @@ def run_news_data_task() -> None:
         raise_exception = True
         for item in workitems.inputs:
             payload = item.payload
-            if(payload is not None):
+            if('search_phrase' in payload):
                 raise_exception = False
         
         if raise_exception:
