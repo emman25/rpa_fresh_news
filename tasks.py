@@ -471,7 +471,7 @@ def run_news_data_task() -> None:
 
     except Exception as e:
         with open('configuration.json', 'r') as config_file:
-            payload = json.loads(config_file)
+            payload = json.load(config_file)
             logger.info(f"Loaded payload from configuration.json: {payload}")
 
     newsSource = NewsSource.builder()\
