@@ -113,3 +113,67 @@
 2024-01-16 20:42:03,937 - tasks - INFO - Wrote to excel: output/files/data.xlsx
 2024-01-16 20:42:05,389 - tasks - INFO - Downloaded image: output/pics/Space_Pagans_and_Smartphone_Witches__Where_Tech_Meets_MysticismNov__23__2021.png
 2024-01-16 20:42:05,391 - tasks - INFO - Completed the automation
+2024-01-17 04:54:18,751 - tasks - INFO - Loaded payload from configuration.json: {'search_phrase': 'computer science', 'news_category': 'Arts', 'num_months': 0}
+2024-01-17 04:55:01,960 - tasks - INFO - Error in attempt 1: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.217)
+Stacktrace:
+	GetHandleVerifier [0x00A06EE3+174339]
+	(No symbol) [0x00930A51]
+	(No symbol) [0x00646FF6]
+	(No symbol) [0x0062EFE7]
+	(No symbol) [0x0069B53B]
+	(No symbol) [0x006A9E7B]
+	(No symbol) [0x00696DA6]
+	(No symbol) [0x00671034]
+	(No symbol) [0x00671F8D]
+	GetHandleVerifier [0x00AA4B1C+820540]
+	sqlite3_dbdata_init [0x00B653EE+653550]
+	sqlite3_dbdata_init [0x00B64E09+652041]
+	sqlite3_dbdata_init [0x00B597CC+605388]
+	sqlite3_dbdata_init [0x00B65D9B+656027]
+	(No symbol) [0x0093FE6C]
+	(No symbol) [0x009383B8]
+	(No symbol) [0x009384DD]
+	(No symbol) [0x00925818]
+	BaseThreadInitThunk [0x75AF7BA9+25]
+	RtlInitializeExceptionChain [0x7778BD2B+107]
+	RtlClearBits [0x7778BCAF+191]
+
+2024-01-17 04:55:01,961 - tasks - INFO - Retrying in 1 minute...
+2024-01-17 04:55:48,231 - tasks - INFO - Loaded payload from configuration.json: {'search_phrase': 'computer science', 'news_category': 'Arts', 'num_months': 0}
+2024-01-17 04:56:26,657 - tasks - INFO - Error in attempt 1: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.217)
+Stacktrace:
+	GetHandleVerifier [0x00A06EE3+174339]
+	(No symbol) [0x00930A51]
+	(No symbol) [0x00646FF6]
+	(No symbol) [0x0062EFE7]
+	(No symbol) [0x0069B53B]
+	(No symbol) [0x006A9E7B]
+	(No symbol) [0x00696DA6]
+	(No symbol) [0x00671034]
+	(No symbol) [0x00671F8D]
+	GetHandleVerifier [0x00AA4B1C+820540]
+	sqlite3_dbdata_init [0x00B653EE+653550]
+	sqlite3_dbdata_init [0x00B64E09+652041]
+	sqlite3_dbdata_init [0x00B597CC+605388]
+	sqlite3_dbdata_init [0x00B65D9B+656027]
+	(No symbol) [0x0093FE6C]
+	(No symbol) [0x009383B8]
+	(No symbol) [0x009384DD]
+	(No symbol) [0x00925818]
+	BaseThreadInitThunk [0x75AF7BA9+25]
+	RtlInitializeExceptionChain [0x7778BD2B+107]
+	RtlClearBits [0x7778BCAF+191]
+
+2024-01-17 04:56:26,658 - tasks - INFO - Retrying in 1 minute...
+2024-01-17 05:00:37,532 - tasks - INFO - Loaded payload from configuration.json: {'search_phrase': 'computer science', 'news_category': 'Arts', 'num_months': 0}
+2024-01-17 05:01:22,789 - tasks - INFO - Loaded payload from configuration.json: {'search_phrase': 'computer science', 'news_category': 'Arts', 'num_months': 0}
+2024-01-17 05:04:25,338 - tasks - INFO - Loaded payload from work item: {'search_phrase': 'soccer science', 'news_category': 'Arts', 'num_months': 0}
+2024-01-17 05:05:02,158 - tasks - INFO - Loaded payload from work item: None
+2024-01-17 05:06:56,703 - tasks - INFO - Loaded payload from configuration.json: {'search_phrase': 'computer science', 'news_category': 'Arts', 'num_months': 0}
+2024-01-17 05:07:34,233 - tasks - INFO - Loaded payload from work item: {'search_phrase': 'computer science', 'news_category': 'Arts', 'num_months': 0}
+2024-01-17 05:11:01,389 - tasks - INFO - Loaded payload from configuration.json: {'search_phrase': 'computer science', 'news_category': 'Arts', 'num_months': 0}
+2024-01-17 05:11:45,028 - tasks - INFO - Loaded payload from work item: {'search_phrase': 'computer science', 'news_category': 'Arts', 'num_months': 0}

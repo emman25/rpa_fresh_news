@@ -456,20 +456,23 @@ class NewsSource:
 @task
 def run_news_data_task() -> None:
     payload = {}
-
-    workitems = WorkItems()
     
-    if len(workitems.inputs) == 0:
-        try:
-            with open('configuration.json', 'r') as config_file:
-                payload = json.load(config_file)
-                logger.info(f"Loaded payload from configuration.json: {payload}")
-        except FileNotFoundError:
-            logger.error("configuration.json file not found.")
-    else:
+    try:
+        raise_exception = True
         for item in workitems.inputs:
             payload = item.payload
-            logger.info(f"Loaded payload from work item: {payload}")
+            if(payload is not None):
+                raise_exception = False
+        
+        if raise_exception:
+            raise Exception("Load config")
+        
+        logger.info(f"Loaded payload from work item: {payload}")
+
+    except Exception as e:
+        with open('configuration.json', 'r') as config_file:
+            payload = json.load(config_file)
+            logger.info(f"Loaded payload from configuration.json: {payload}")
 
     newsSource = NewsSource.builder()\
     .with_search_phrase(payload['search_phrase'])\
