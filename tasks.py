@@ -455,11 +455,7 @@ class NewsSource:
 
 @task
 def run_news_data_task() -> None:
-    payload = {
-    "search_phrase": "computer science",
-    "news_category": "Arts",
-    "num_months": 0
- }
+    payload = {}
     
     try:
         raise_exception = True
