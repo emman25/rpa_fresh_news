@@ -132,9 +132,9 @@ class NewsSource:
         Returns:
             None
         """
-        self.browser.wait_until_element_is_visible('css:#app > div:nth-child(4) > div.NYTAppHideMasthead.css-1r6wvpq.e1m0pzr40 > header > section.css-9kr9i3.e1m0pzr42 > div.css-qo6pn.ea180rp0 > div.css-10488qs > button > svg')
-        self.browser.click_button('css:#app > div:nth-child(4) > div.NYTAppHideMasthead.css-1r6wvpq.e1m0pzr40 > header > section.css-9kr9i3.e1m0pzr42 > div.css-qo6pn.ea180rp0 > div.css-10488qs > button')
-        self.browser.input_text('css:#search-input > form > div > input', self.search_phrase)
+        self.browser.wait_until_element_is_visible('css:#app > div:nth-child(4) > div.NYTAppHideMasthead.css-1r6wvpq.e1m0pzr40 > header > section.css-9kr9i3.e1m0pzr42 > div.css-qo6pn.ea180rp0 > div > button > svg')
+        self.browser.click_button('css:#app > div:nth-child(4) > div.NYTAppHideMasthead.css-1r6wvpq.e1m0pzr40 > header > section.css-9kr9i3.e1m0pzr42 > div.css-qo6pn.ea180rp0 > div > button')
+        self.browser.input_text('xpath://*[@id="search-input"]/form/div/input', self.search_phrase)
         self.browser.click_button('css:#search-input > form > button')
         self.browser.wait_until_element_is_visible('css=#site-content > div > div.css-1npexfx > div.css-nhmgdh > p')
         time.sleep(1)
