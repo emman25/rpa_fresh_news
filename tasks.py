@@ -120,8 +120,17 @@ class NewsSource:
         Returns:
             None
         """
-        self.browser.open_available_browser(SITE_URL)
-        self.browser.maximize_browser_window
+        chrome_options = {
+            "arguments": [
+                "--headless",
+                "--disable-gpu",  
+                "--no-sandbox", 
+            ]
+        }
+        self.browser.set_download_directory(Path.cwd() / 'output')
+     
+        self.browser.open_available_browser(SITE_URL,  options=chrome_options)
+        # self.browser.maximize_browser_window
 
     def search_phrase_web(self) -> None:
         """Performs a search for the specified search phrase on the website.
