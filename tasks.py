@@ -133,19 +133,34 @@ class NewsSource:
         # self.browser.maximize_browser_window
 
     def search_phrase_web(self) -> None:
-        """Performs a search for the specified search phrase on the website.
+        """Performs a search for the specified search phrase on the website."""
 
-        Args:
-            None
+        try:
+            
+            self.browser.wait_until_element_is_not_visible('css:.fides-modal-overlay', timeout=10)
+        except Exception as e:
+            logger.info("Overlay not present or could not wait for it to disappear: " + str(e))
 
-        Returns:
-            None
-        """
-        self.browser.wait_until_element_is_visible('xpath:/html/body/div/div[2]/div[2]/header/section[1]/div[1]/div/button')
-        self.browser.click_button('xpath:/html/body/div/div[2]/div[2]/header/section[1]/div[1]/div/button')
-        self.browser.input_text('xpath://*[@id="search-input"]/form/div/input', self.search_phrase)
-        self.browser.click_button('xpath:/html/body/div/div[2]/div[2]/header/section[1]/div[1]/div/div/form/button')
+        self.browser.wait_until_element_is_visible(
+            'css:#app > div:nth-child(4) > div.NYTAppHideMasthead.css-1r6wvpq.e1m0pzr40 > header > section.css-9kr9i3.e1m0pzr42 > div.css-qo6pn.ea180rp0 > div > button > svg',
+            timeout=10
+        )
+        self.browser.click_button(
+            'css:#app > div:nth-child(4) > div.NYTAppHideMasthead.css-1r6wvpq.e1m0pzr40 > header > section.css-9kr9i3.e1m0pzr42 > div.css-qo6pn.ea180rp0 > div > button'
+        )
+        self.browser.input_text(
+            'xpath://*[@id="search-input"]/form/div/input', self.search_phrase
+        )
+        self.browser.click_button(
+            'css:#search-input > form > button'
+        )
+        self.browser.wait_until_element_is_visible(
+            'css=#site-content > div > div.css-1npexfx > div.css-nhmgdh > p',
+            timeout=10
+        )
+        
         time.sleep(1)
+
 
     def select_news_category(self) -> None:
         """Selects the specified news category on the website.
