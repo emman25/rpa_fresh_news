@@ -130,7 +130,8 @@ class NewsSource:
         self.browser.set_download_directory(Path.cwd() / 'output')
      
         self.browser.open_available_browser(SITE_URL,  options=chrome_options)
-        # self.browser.maximize_browser_window
+
+        self.browser.set_window_size(800, 600)
 
     def search_phrase_web(self) -> None:
         """Performs a search for the specified search phrase on the website."""
