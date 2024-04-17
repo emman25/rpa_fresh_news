@@ -120,48 +120,24 @@ class NewsSource:
         Returns:
             None
         """
-        chrome_options = {
-            "arguments": [
-                "--headless",
-                "--disable-gpu",  
-                "--no-sandbox", 
-            ]
-        }
-        self.browser.set_download_directory(Path.cwd() / 'output')
-     
-        self.browser.open_available_browser(SITE_URL,  options=chrome_options)
-
-        self.browser.set_window_size(800, 600)
+        self.browser.open_available_browser(SITE_URL)
+        self.browser.set_window_size(1366, 768)
 
     def search_phrase_web(self) -> None:
-        """Performs a search for the specified search phrase on the website."""
+        """Performs a search for the specified search phrase on the website.
 
-        try:
-            
-            self.browser.wait_until_element_is_not_visible('css:.fides-modal-overlay', timeout=10)
-        except Exception as e:
-            logger.info("Overlay not present or could not wait for it to disappear: " + str(e))
+        Args:
+            None
 
-        self.browser.wait_until_element_is_visible(
-            'css:#app > div:nth-child(4) > div.NYTAppHideMasthead.css-1r6wvpq.e1m0pzr40 > header > section.css-9kr9i3.e1m0pzr42 > div.css-qo6pn.ea180rp0 > div > button > svg',
-            timeout=10
-        )
-        self.browser.click_button(
-            'css:#app > div:nth-child(4) > div.NYTAppHideMasthead.css-1r6wvpq.e1m0pzr40 > header > section.css-9kr9i3.e1m0pzr42 > div.css-qo6pn.ea180rp0 > div > button'
-        )
-        self.browser.input_text(
-            'xpath://*[@id="search-input"]/form/div/input', self.search_phrase
-        )
-        self.browser.click_button(
-            'css:#search-input > form > button'
-        )
-        self.browser.wait_until_element_is_visible(
-            'css=#site-content > div > div.css-1npexfx > div.css-nhmgdh > p',
-            timeout=10
-        )
-        
+        Returns:
+            None
+        """
+        self.browser.wait_until_element_is_visible('css:#app > div:nth-child(4) > div.NYTAppHideMasthead.css-1r6wvpq.e1m0pzr40 > header > section.css-9kr9i3.e1m0pzr42 > div.css-qo6pn.ea180rp0 > div > button > svg')
+        self.browser.click_button('css:#app > div:nth-child(4) > div.NYTAppHideMasthead.css-1r6wvpq.e1m0pzr40 > header > section.css-9kr9i3.e1m0pzr42 > div.css-qo6pn.ea180rp0 > div > button')
+        self.browser.input_text('xpath://*[@id="search-input"]/form/div/input', self.search_phrase)
+        self.browser.click_button('css:#search-input > form > button')
+        self.browser.wait_until_element_is_visible('css=#site-content > div > div.css-1npexfx > div.css-nhmgdh > p')
         time.sleep(1)
-
 
     def select_news_category(self) -> None:
         """Selects the specified news category on the website.
