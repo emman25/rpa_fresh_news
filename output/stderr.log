@@ -1,0 +1,59 @@
+2024-04-16 06:28:44,719 - RPA.core.certificates - INFO - Truststore injection done, using system certificate store to validate HTTPS.
+<socket.SocketIO object at 0x0000025F33EBE620>
+===============================================================================
+All tasks have run but the process still hasn't exited elapsed 40.02 seconds after teardown end. Showing threads found:
+================================= Thread Dump =================================
+
+-------------------------------------------------------------------------------
+ Thread Thread-9  (daemon: True)
+
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\threading.py", line 973, in _bootstrap
+   self._bootstrap_inner()
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\threading.py", line 1016, in _bootstrap_inner
+   self.run()
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\threading.py", line 1378, in run
+   self.function(*self.args, **self.kwargs)
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\site-packages\robocorp\tasks\_commands.py", line 523, in on_timeout
+   dump_threads(
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\site-packages\robocorp\tasks\_interrupts.py", line 215, in dump_threads
+   for filename, lineno, name, line in traceback.extract_stack(stack):
+
+-------------------------------------------------------------------------------
+ Thread MainThread  (daemon: False)
+
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\site-packages\RPA\Browser\Selenium.py", line 292, in stop_drivers
+   self._quit_all_drivers()
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\site-packages\RPA\Browser\Selenium.py", line 311, in _quit_all_drivers
+   driver.quit()  # quits the browser as well
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 187, in quit
+   super().quit()
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 469, in quit
+   self.execute(Command.QUIT)
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+   response = self.command_executor.execute(driver_command, params)
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 300, in execute
+   return self._request(command_info[0], url, body=data)
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 321, in _request
+   response = self._conn.request(method, url, body=body, headers=headers)
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\site-packages\urllib3\_request_methods.py", line 110, in request
+   return self.request_encode_url(
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\site-packages\urllib3\_request_methods.py", line 143, in request_encode_url
+   return self.urlopen(method, url, **extra_kw)
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\site-packages\urllib3\poolmanager.py", line 444, in urlopen
+   response = conn.urlopen(method, u.request_uri, **kw)
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\site-packages\urllib3\connectionpool.py", line 790, in urlopen
+   response = self._make_request(
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+   response = conn.getresponse()
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\site-packages\urllib3\connection.py", line 461, in getresponse
+   httplib_response = super().getresponse()
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\http\client.py", line 1375, in getresponse
+   response.begin()
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\http\client.py", line 318, in begin
+   version, status, reason = self._read_status()
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\http\client.py", line 279, in _read_status
+   line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+ File "C:\ProgramData\robocorp\ht\4bc1fbc_b1f3c24_6133770e\lib\socket.py", line 705, in readinto
+   return self._sock.recv_into(b)
+
+=============================== END Thread Dump ===============================
